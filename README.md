@@ -393,6 +393,18 @@ This is the load balancer that works at the network's transport layer, also know
 
 This is the load balancer that operates at the application layer, also known as layer 7. Load balancers can read requests in their entirety and perform content-based routing. This allows the management of load based on a full understanding of traffic.
 
+### 心得
+
+load balancer 分 L4 和 L7
+
+L4 是 Network layer
+透過例如像是 IP addresses 的資訊來做 routing
+無法透過 request 的內容來做 route
+通常指可以高速運行的硬體設施
+
+L7 是 Application layer
+可以根據 request 的內容來決定 route 的方式
+
 ## Types
 
 Let's look at different types of load balancers:
